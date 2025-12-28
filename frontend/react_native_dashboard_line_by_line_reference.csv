@@ -1,0 +1,23 @@
+Section,Line,Code,Pseudo Syntax,What It Does,Simple Analogy
+App.js,1,// frontend/App.js Pseudo code what it does Simple anology,COMMENT header,Documentation header,Map legend
+App.js,3,import React from 'react';,LOAD React,Imports React library,Getting the main toolbox
+App.js,4,"import { SafeAreaView, StatusBar, Platform } from 'react-native';",LOAD UI components,Imports native UI components,Getting specialized tools
+App.js,5,import Dashboard from './Dashboard';,LOAD Dashboard,Imports dashboard component,Getting main exhibit
+App.js,7,export default function App() {,DEFINE App component,Creates root component,Declaring main entrance
+App.js,9,<SafeAreaView ...>,CREATE SafeAreaView,Creates safe layout container,Framed canvas
+App.js,10,<StatusBar .../>,CONFIGURE StatusBar,Sets status bar style,Adjusting lighting
+App.js,11,<Dashboard />,RENDER Dashboard,Displays dashboard,Placing exhibition
+Dashboard.js,14,"import React, { useState, useEffect } from 'react';",LOAD React hooks,Imports hooks,State tools
+Dashboard.js,33,const API_BASE_URL = 'http://localhost:5000';,DEFINE API URL,Sets backend URL,Delivery address
+Dashboard.js,36,const Dashboard = () => {,DEFINE component,Creates dashboard component,Opening hall
+Dashboard.js,37,useState('week'),CREATE timeRange state,Tracks selected time range,Default filter
+Dashboard.js,60,const fetchDashboardData = async () => {,DEFINE async fetch,Fetches dashboard data,Collecting data
+Dashboard.js,84,catch (err),HANDLE errors,Handles fetch failures,Emergency mode
+Dashboard.js,95,const setFallbackData = () => {,DEFINE fallback,Sets backup data,Emergency backup
+Dashboard.js,122,const addSampleSale = async () => {,DEFINE test sale,Adds sample transaction,Test transaction
+Dashboard.js,148,handleTimeRangeChange(),DEFINE handler,Changes time range,Switching filter
+Dashboard.js,158,"useEffect(() => { ... }, [])",RUN on mount,Fetches initial data,Startup routine
+Dashboard.js,176,if (loading),CONDITIONAL render,Shows loading screen,Please wait sign
+Dashboard.js,269,<LineChart .../>,RENDER chart,Displays sales chart,Drawing graph
+Dashboard.js,354,const MetricCard = (...) => (,DEFINE component,Reusable metric card,Scorecard template
+Dashboard.js,549,export default Dashboard;,EXPORT component,Makes component usable,Opening to public
